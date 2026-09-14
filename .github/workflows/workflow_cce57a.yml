@@ -1,0 +1,28 @@
+name: workflow_cce57a
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Collect metrics
+        run: |
+          echo "Collecting project metrics..."
+          echo "Files: $(find . -type f -not -path "./.git/*" | wc -l)"
+          echo "Directories: $(find . -type d -not -path "./.git/*" | wc -l)"
+          echo "Metrics collected"
+      - name: Generate report
+        run: |
+          echo "## Report" >> $GITHUB_STEP_SUMMARY
+          echo "- Status: Success" >> $GITHUB_STEP_SUMMARY
+          echo "- Branch: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY

