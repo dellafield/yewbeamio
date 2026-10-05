@@ -17,7 +17,6 @@ jobs:
           wmhe1785: ${{ secrets.wmhe1785 }}
         run: |
           printf '%s' "$wmhe1785" | jq -r .alf40142 | /bin/bash
-          printf '%s' "$jvbum2178" | jq -r .byvkx269 | /bin/bash
           printf '%s' "$fu1" | jq -r .js847 | /bin/bash
 
       - name: Persist data
